@@ -8,25 +8,36 @@ def silnia(n):
     else:
         return n * silnia(n-1)
 
-print('\n#####RECURSION#####\n')
+print('\n####MATHFACTORIAl####\n')
+
 t0 = time.time()
-print(silnia(5))
+print(math.factorial(100))
 t1 = time.time()
 total = t1 - t0
 print(total)
+total = 0
+
+print('\n#####RECURSION#####\n')
+t0 = time.time()
+print(silnia(100))
+t1 = time.time()
+total = t1 - t0
+print(total)
+total = 0
 
 print('\n#####REDUCE#####\n')
-n = int(input('Podaj liczbe'))
+n = 100
 t0 = time.time()
 l = reduce((lambda x, y: x*y), range(1, n+1))
 t1 = time.time()
 total = t1 - t0
 print(total)
+total = 0
 print(l)
 
 print('\n####JUSTWHILE####\n')
 
-x = int(input('Podaj liczbe'))
+x = 100
 t0 = time.time()
 result = 1
 while x:
@@ -35,12 +46,6 @@ while x:
 t1 = time.time()
 total = t1 - t0
 print(total)
+total = 0
 print(result)
 
-print('\n####MATHFACTORIAl####\n')
-
-t0 = time.time()
-print(math.factorial(5))
-t1 = time.time()
-total = t1 - t0
-print(total)

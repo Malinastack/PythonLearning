@@ -17,3 +17,7 @@ def silnia(n):
 
 print(silnia(5))
 
+
+
+
+
